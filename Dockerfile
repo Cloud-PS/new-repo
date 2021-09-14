@@ -1,2 +1,4 @@
-From ubuntu:18.04
-RUN echo "hello world 1.1"
+FROM node:12.6.0-alpine
+EXPOSE 8080
+COPY server.js .
+CMD node server.js
